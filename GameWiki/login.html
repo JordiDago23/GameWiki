@@ -21,96 +21,6 @@
         font-size: 16px;
       }
 
-
-
-      body {
-        min-height: 100vh;
-        background: linear-gradient(to right,  rgb(53, 53, 53) 50%,   rgb(53, 53, 53) 50%);
-        margin: 0;  
-        padding: 0;
-      }
-
-      .sect-albums {
-        background-color: #9900ff; /* Cambia este color según tus preferencias */
-        padding: 40px; /* Ajusta el relleno según sea necesario */
-      }
-
-      section.sect-albums {
-        min-height: 100vh;
-        background: linear-gradient(to right,   rgb(53, 53, 53),  rgb(53, 53, 53)) fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0;  /* Asegura que no haya margen */
-        padding: 0; /* Asegura que no haya relleno */
-      }
-
-
-      
-      .formulario-unique3857 {
-        width: 70%;   /* Anchura del formulario*/
-        margin: auto; 
-        text-align: center;
-        transform: translateY(16vh);
-        justify-content: center;
-        display: grid;
-        padding: 170px; /*Altura del Formulario*/
-        border: 0.5px solid rgb(43, 3, 41);
-        border-radius: 30px;
-        box-shadow: 0 5px 5px rgb(236, 21, 165);
-        background: linear-gradient(to right, rgb(30, 27, 185), rgb(209, 37, 37)) fixed;
-      }
-
-      .buttonlogin {
-        margin: auto;
-        font-size:22px;
-        border-radius: 50px;
-        box-shadow: 0 5px 5px rgb(236, 21, 165);
-        border: 0.5px solid rgb(43, 3, 41);
-        
-      }
-
-      .titulo h1{
-        font-size: 45px;
-        text-align: center;
-        padding: 20px;
-        font-family:'Times New Roman', Times, serif;
-        color:white
-      }
-
-      section.sector-priva {
-        min-height: 100vh;
-        background-color: rgb(248, 50, 166);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .cardpriva {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0 auto;
-        background-color: rgb(248, 50, 166);
-      }
-
-      .priva {
-        width: 40%;
-        display: grid;
-        margin: 20px;
-        padding: 20px;
-        border: 0.5px solid rgb(185, 27, 27); /* el borde del cuadro, si ves que no va elimina este comentario para usar el de abajo el cuadro de sombra */
-        border-radius: 30px;
-        box-shadow: 0 2px 5px rgb(170, 34, 34); /* del cuadro su sombra */
-      }
-
-      .priva button{
-        display: grid;
-        margin: 20px;
-        padding: 50px;
-        border: 0.5px solid rgb(196, 44, 44); /* el borde del cuadro, si ves que no va elimina este comentario para usar el de abajo el cuadro de sombra */
-        border-radius: 30px;
-        box-shadow: 0 2px 5px rgb(92, 51, 51); /* del cuadro su sombra */
-      }
-
       body {
         font-weight: 400;
         font-style:normal;
@@ -120,8 +30,90 @@
         line-height: 1.15;
         color: var(--dl-color-gray-black);
         background-color: var(--dl-color-gray-white);
+        margin: 0;  
+        padding: 0;
+        min-height: 100vh;
+        background: url('https://images7.alphacoders.com/569/569477.jpg') center/cover no-repeat;
+      }
+      footer{
+        margin:auto;
+      }
+
+      button {
+        background-color: #4CAF50;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        padding: 15px;
+        margin: 10px 0px;
+        cursor: pointer;
+      }
+
+      form {
+        border: 3px solid rgba(5, 5, 5, 0);
+        width: 300px;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: rgba(22, 22, 22, 0.774); /* Ajusta la opacidad según sea necesario */
+        width: 35%;   /* Anchura del formulario*/
+        margin: auto; 
+        padding: 70px;
+      }
+
+      input[type=text], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid rgba(5, 5, 5, 0.815);
+        box-sizing: border-box;
+      }
+
+      button:hover {
+        opacity: 0.7;
+      }
+
+      .buttonFilled {
+            /* Estilos comunes para ambos elementos */
+            display: inline-block;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #3498db;
+            color: white;
+            transition: background-color 0.3s;
+      }
+
+      .buttonFilled:hover {
+            background-color: #2980b9;
+      }
+
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .container h4{
+        text-align: left;
+        color: rgb(255, 239, 239);
+      }
+      .container p{
+        color: rgb(255, 255, 255);
         
       }
+      .ordenar{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 10px 5px;
+        padding: center;
+        color:white;
+      }
+  
     </style>
     
     <style>
@@ -154,7 +146,7 @@
                 <a class="home-nav222 bodySmall"  href ="index.html" >Home</a>
                 <span class="home-nav22">Guías y Trucos</span>
                 <span class="home-nav32">Comunidad</span>
-                <span class="home-nav52 bodySmall">Contacto</span>
+                <a class="home-nav52 bodySmall" href="contacto.html">Contacto</a>
               </nav>
 
               <div class="home-buttons">
@@ -179,18 +171,29 @@
         </div>
 
         
-        <section class="sect-albums">
 
-          <div class="titulo">
-            <h1>Iniciar Sesion</h1>
+        <form>
+          <div class="container">
+            <h4>Usuario:</h4>
+            <input type="text" placeholder="Ingresa el Usuario" name="username" required>
+            <h4>Contraseña:</h4>
+            <input type="password" placeholder="Ingresa la Contraseña" name="password" required>
+            
+            <button type="submit" class="buttonFilled">Iniciar Sesión</button>
+              <div class="ordenar">
+                <div class="container p">
+                  <div class="container r"><input type="checkbox" checked="checked"> Recordarme</div>
+                </div>
+                <br><br>
+                <div class="container parr"></div>
+                <div class="container p">
+                  <p>¿Olvidaste la <a href="#">contraseña</a>?</p>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="formulario-unique3857">
-            <input type="text" name="nombre" placeholder="Correo Electrónico" autocomplete="off" required><br>
-            <input type="email" name="correo" placeholder="Contraseña" autocomplete="off" required><br>
-            <button class="buttonlogin" type="submit" value="Enviar">Iniciar sesión</button>
-          </div>
-        </section>
+        </form>     
+         
 
 
 
@@ -198,7 +201,7 @@
         <div class="home-footer">
           <footer class="footerContainer home-footer1">
             <div class="home-container5">
-              <span class="home-logo2">WIKIGAMES</span>
+              <a class="home-logo2" href = "index.html" >WIKIGAMES</a>
 
               <nav class="home-nav1">
                 <a class="home-nav222 bodySmall"  href ="politicaCookies.html" >Política de Cookies</a>
