@@ -39,7 +39,7 @@
       button {
         background-color: rgba(189,228,32,255);
         width: 100%;
-        color: rgb(0, 0, 0);
+        color: rgba(0, 0, 0, 0);
         padding: 15px;
         margin: 10px 0px;
         border: none;
@@ -76,8 +76,6 @@
 
       .container {
         text-align: center;
-        max-width: 1200px; /* Ancho máximo del contenedor principal */
-        margin: auto;
       }
 
       .container h4{
@@ -115,8 +113,8 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        padding: center;
-        max-width: 1200px; /* Ancho máximo del contenedor principal */
+        margin: 10px 5px;
+        padding: 0px 90px;
       }
       
     </style>
@@ -138,12 +136,9 @@
       }
 
       .container.p {
-        text-align: right; /* Alinea "¿Olvidaste la contraseña?" al centro */
+        text-align: center; /* Alinea "¿Olvidaste la contraseña?" al centro */
       }
-
-
     </style>
-
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -161,7 +156,7 @@
               <nav class="home-links">
                 <a class="home-nav222 bodySmall"  href ="index.html" >Home</a>
                 <span class="home-nav22">Guías y Trucos</span>
-                <a class="home-nav32" href ="comunidad.html" >Comunidad</a>
+                <a class="home-nav222 bodySmall"  href ="foros.html" >Foros</a>
                 <a class="home-nav222 bodySmall"  href ="contacto.html" >Contacto</a>
               </nav>
 
@@ -182,33 +177,36 @@
 
           </header>
         </div>
-        <div class="home-hero"></div>
+        <div class="home-hero">
+          
+        </div>
 
+        
 
         <form>
-            <div class="container">
-              <div class="container r">
-                <h4>Usuario:</h4>
-                <input type="text" placeholder="Ingresa el Usuario" name="username" required>
-                <h4>Contraseña:</h4>
-                <input type="password" placeholder="Ingresa la Contraseña" name="password" required>
-              </div>
-                <button type="submit" class="buttonFilled">Iniciar Sesión</button>
-                <div class="ordenar">
-                    <div class="container r"><input type="checkbox" checked="checked"> Recordarme</div>
-                    <div class="container p"></div>
-                      <p>¿Olvidaste la <a href="#">contraseña</a>?</p>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="container r">
+              <h4>Usuario:</h4>
+              <input type="text" placeholder="Ingresa el Usuario" name="username" required>
+              <h4>Contraseña:</h4>
+              <input type="password" placeholder="Ingresa la Contraseña" name="password" required>
             </div>
-        </form>
+              <button type="submit" class="buttonFilled">Iniciar Sesión</button>
+              <div class="ordenar">
+                  <div class="container r"><input type="checkbox" checked="checked"> Recordarme</div>
+                  <div class="container p"></div>
+                    <p>¿Olvidaste la <a href="#">contraseña</a>?</p>
+                  </div>
+              </div>
+          </div>
+      </form>
 
 
         <!-- Footer -->
         <div class="home-footer">
           <footer class="footerContainer home-footer1">
             <div class="home-container5">
-              <a class="home-logo logo" href = "index.html" >WIKIGAMES</a>
+              <span class="home-logo2">WIKIGAMES</span>
 
               <nav class="home-nav1">
                 <a class="home-nav222 bodySmall"  href ="politicaCookies.html" >Política de Cookies</a>
