@@ -1,2 +1,1 @@
 
-Hemos desarrollado las secciones de inicio, política de cookies y privacidad, registro, inicio de sesión, a cargo de Dago y Andrei. Andrei se encargará de la sección de contacto, mientras que Dago gestionará el resto a través de GitHub y Diego hara comunidad.
