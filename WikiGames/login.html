@@ -2,15 +2,17 @@
 <html lang="en">
   <head>
     <title>WikiGames</title>
+    <link rel = "icon" type="image/png" href="logo.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
 
     <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;display=swap" />
-    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind" data-tag="font"/>
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"/>
 
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
@@ -30,29 +32,32 @@
         line-height: 1.15;
         color: var(--dl-color-gray-black);
         background-color: var(--dl-color-gray-white);
-        margin: 0;
+        margin: 0;  
         padding: 0;
         min-height: 100vh;
         background: url('https://images7.alphacoders.com/569/569477.jpg') center/cover no-repeat;
       }
+      footer{
+        margin:auto;
+      }
 
       button {
-        background-color: rgba(189,228,32,255);
+        background-color: #4CAF50;
         width: 100%;
-        color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
         padding: 15px;
         margin: 10px 0px;
-        border: none;
         cursor: pointer;
       }
 
       form {
+        border: 3px solid rgba(5, 5, 5, 0);
         width: 300px;
         padding: 20px;
-        border-radius: none;
-        background-color: rgba(255, 255, 255, 0); /* Ajusta la opacidad según sea necesario */
+        border-radius: 5px;
+        background-color: rgba(22, 22, 22, 0.774); /* Ajusta la opacidad según sea necesario */
         width: 35%;   /* Anchura del formulario*/
-        margin: auto;
+        margin: auto; 
         padding: 70px;
       }
 
@@ -61,6 +66,7 @@
         margin: 8px 0;
         padding: 12px 20px;
         display: inline-block;
+        border: 2px solid rgba(5, 5, 5, 0.815);
         box-sizing: border-box;
       }
 
@@ -68,10 +74,19 @@
         opacity: 0.7;
       }
 
-      .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        margin: 10px 5px;
+      .buttonFilled {
+            /* Estilos comunes para ambos elementos */
+            display: inline-block;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            background-color:  #4CAF50;
+            color: white;
+            transition: background-color 0.3s;
+      }
+
+      .buttonFilled:hover {
+        opacity: 0.7;
       }
 
       .container {
@@ -80,43 +95,21 @@
 
       .container h4{
         text-align: left;
+        color: rgb(255, 239, 239);
       }
-      
       .container p{
-        color: white;
+        color: rgb(255, 255, 255);
+        
       }
-
-      .container.r{
-        text-align: left;
-        color: white;
-      }
-
-
-      .buttonFilled {
-            /* Estilos comunes para ambos elementos */
-            display: inline-block;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            background-color: #3498db;
-            color: white;
-            border-radius: none;
-            transition: background-color 0.3s;
-        }
-
-        .buttonFilled:hover {
-            background-color: #2980b9;
-        }
-
-
       .ordenar{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         margin: 10px 5px;
-        padding: 0px 90px;
+        padding: center;
+        color:white;
       }
-      
+  
     </style>
     
     <style>
@@ -129,14 +122,6 @@
           opacity: 1;
           transform: translateX(0);
         }
-      }
-
-      .container.r {
-        text-align: left; /* Alinea "Recordarme" a la izquierda */
-      }
-
-      .container.p {
-        text-align: center; /* Alinea "¿Olvidaste la contraseña?" al centro */
       }
     </style>
   </head>
@@ -155,9 +140,9 @@
 
               <nav class="home-links">
                 <a class="home-nav222 bodySmall"  href ="index.html" >Home</a>
-                <span class="home-nav22">Guías y Trucos</span>
-                <a class="home-nav222 bodySmall"  href ="foros.html" >Foros</a>
-                <a class="home-nav222 bodySmall"  href ="contacto.html" >Contacto</a>
+                <a class="home-nav22" href="Guias_y_Trucos.html">Guías y Trucos</a>
+                <a class="home-nav32" href ="foros.html" >Foros</a>
+                <a class="home-nav52 bodySmall" href="contacto.html">Contacto</a>
               </nav>
 
               <div class="home-buttons">
@@ -185,28 +170,34 @@
 
         <form>
           <div class="container">
-            <div class="container r">
-              <h4>Usuario:</h4>
-              <input type="text" placeholder="Ingresa el Usuario" name="username" required>
-              <h4>Contraseña:</h4>
-              <input type="password" placeholder="Ingresa la Contraseña" name="password" required>
-            </div>
-              <button type="submit" class="buttonFilled">Iniciar Sesión</button>
+            <h4>Usuario:</h4>
+            <input type="text" placeholder="Ingresa el Usuario" name="username" required>
+            <h4>Contraseña:</h4>
+            <input type="password" placeholder="Ingresa la Contraseña" name="password" required>
+            
+            <button type="submit" class="buttonFilled">Iniciar Sesión</button>
               <div class="ordenar">
+                <div class="container p">
                   <div class="container r"><input type="checkbox" checked="checked"> Recordarme</div>
-                  <div class="container p"></div>
-                    <p>¿Olvidaste la <a href="#">contraseña</a>?</p>
-                  </div>
+                </div>
+                <br><br>
+                <div class="container parr"></div>
+                <div class="container p">
+                  <p>¿Olvidaste la <a href="#">contraseña</a>?</p>
+                </div>
               </div>
+            </div>
           </div>
-      </form>
+        </form>     
+         
+
 
 
         <!-- Footer -->
         <div class="home-footer">
           <footer class="footerContainer home-footer1">
             <div class="home-container5">
-              <span class="home-logo2">WIKIGAMES</span>
+              <a class="home-logo2" href = "index.html" >WIKIGAMES</a>
 
               <nav class="home-nav1">
                 <a class="home-nav222 bodySmall"  href ="politicaCookies.html" >Política de Cookies</a>
