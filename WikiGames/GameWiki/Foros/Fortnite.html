@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WikiGames</title>
+    <link rel = "icon" type="image/png" href="../logo.png"">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;display=swap" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+
+    <style data-tag="reset-style-sheet">
+      html { line-height: 1.15; }
+      body { margin: 0; }
+      * { box-sizing: border-box; border-width: 0; border-style: solid; }
+      p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption { margin: 0; padding: 0; }
+      button { background-color: transparent; }
+      button, input, optgroup, select, textarea { font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0; }
+      button, select { text-transform: none; }
+      button, [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
+      button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+      button:-moz-focus, [type="button"]:-moz-focus, [type="reset"]:-moz-focus, [type="submit"]:-moz-focus { outline: 1px dotted ButtonText; }
+      a { color: inherit; text-decoration: inherit; }
+      input { padding: 2px 4px; }
+      img { display: block; }
+      html { scroll-behavior: smooth; }
+    </style>
+    <style data-tag="default-style-sheet">
+      html { font-family: Inter; font-size: 16px; }
+      body { font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; letter-spacing: normal; line-height: 1.15; color: var(--dl-color-gray-black); background-color: var(--dl-color-gray-white); margin: 0; padding: 0; min-height: 100vh; }
+    </style>
+    <style>
+      @keyframes fade-in-left {
+        0% { opacity: 0; transform: translateX(-20px); }
+        100% { opacity: 1; transform: translateX(0); }
+      }
+    </style>
+
+
+    <style>
+    .wpx {
+      margin: 0 -12px;
+    }
+
+    .wpx {
+      margin: 0;
+    } 
+
+    .contenedorPrincipal {
+        display: flex; /* Utilizar flexbox */
+    }
+    .containerForo {
+      width: 800px; /* Ancho específico del container */
+      height: 1704px; /* Altura específica del container */
+      margin: 0 auto; /* Centrar el container horizontalmente */
+      background-color: #f0f0f0; /* Color de fondo del container */
+      padding: 20px; /* Espaciado interno del container */
+
+    }
+
+
+
+    .containernews {
+      width: 143px; /* Ancho específico del container */
+      height: 10px; /* Altura específica del container */
+      margin-left: 975px; /* Centrar el container horizontalmente */
+      margin-bottom: 105px;
+      background-color: #bb0000; /* Color de fondo del container */
+    }
+
+    .paarriba {
+      margin-top: -175px;
+    }
+    
+    .b-side {
+        margin-bottom: 202px;
+    }
+
+    .c-side {
+        margin-top: 1px;
+        color: #666361;
+    }
+
+    ul {
+      list-style: none; /* Quita los puntos de la lista desordenada */
+    }
+    
+    body {
+      background-color: #e6e6eb; /* Código hexadecimal para un verde claro */
+    }
+    </style>
+
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./Fortnite.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-header">
+          
+          <header data-thq="thq-navbar"class="navbarContainer home-navbar-interactive">
+
+            <a class="home-logo logo" href = "index.html" >WIKIGAMES</a>
+
+            <div data-thq="thq-navbar-nav" class="home-desktop-menu">
+              <nav class="home-links">
+                <a class="home-nav12"  href = "../index.html" >Home</a>
+                <a class="home-nav22" href = "../Guias_y_Trucos.html" >Guías y Trucos</a>
+                <a class="home-nav32" href ="../foros.html" >Foros</a>
+                <a class="home-nav52 bodySmall" href="../contacto.html" >Contacto</a>
+              </nav>
+              <div class="home-buttons">
+                <a class="home-login buttonFlat" href="../login.html">Login</a>
+                <a class="buttonFilled" href="../register.html">Register</a>
+              </div>
+
+
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon socialIcons">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu1 mobileMenu">
+              <div class="home-nav">
+                <div class="home-top">
+                  <a class="logo" href = "../index.html">WIKIGAMES</a>
+                  <div data-thq="thq-close-menu" class="home-close-menu">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="home-icon02 socialIcons"
+                    >
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="home-links1">
+                  <a class="index.html" href="../index.html">Home</a>
+                  <a class="home-nav221 bodySmall" href="../Guias_y_Trucos.html">Guías y Trucos</a>
+                  <a class="home-nav321 bodySmall" href="../foros.html">Foros</a>
+                  <a class="home-nav521 bodySmall" href="../contacto.html">Contacto</a>
+                </nav>
+                
+                <div class="home-buttons1">
+                  <a class="buttonFlat" href="../login.html">Login</a>
+                  <a class="buttonFilled" href="../register.html">Register</a>
+                </div>
+                
+              </div>
+              <div>
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="home-icon04 socialIcons"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="home-icon06 socialIcons"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="home-icon08 socialIcons"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            
+          </header>
+        </div>
+<!-- el cuadro con todo -->
+
+<div class="containernews">
+  <div class="c-side">
+    <div class="b-side b-search">
+        <form method="POST" action="/foro/buscar.php">
+        <input type="text" name="clave" value="" placeholder="Buscar en Juegos">
+        <button type="submit" class="btn btn-default">Buscar</button>
+        <input type="hidden" name="fid" value="7">
+        </form>
+    </div>
+  <div class="_p-mp" id="_mp1"><div id="Right1" data-google-query-id="CIKc3JjNn4UDFQBc9ggdd3sGUg" style="display: none;">
+<script>
+googletag.cmd.push(function() { googletag.display('Right1'); });
+</script>
+<div id="google_ads_iframe_/19725189/mv/right1_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div>                  <input type="hidden" name="token" id="token" value="1711925965b6753a8fd64145488c5baed446f1a1f60d8fa95a">      <input type="hidden" name="fid" id="fid" value="7">
+    
+            <div class="b-side">
+        <h3><i class="fa fa-newspaper-o"></i> Noticias</h3>
+                <ul>
+                      <li>
+              <a class="featured-side" href="/foro/juegos/netease-esta-desarrollando-shooter-marvel-estilo-overwatch-709248">
+                <img class="itemimg" src="https://mediavida.b-cdn.net/img/featured/2024/03/cdd8rcwihv.jpg" alt="miniatura">
+                <div class="featured-info">
+                  <h4>NetEase desarrollando un shooter de Marvel</h4>
+                  <!--<span class="featured-count">99</span>-->
+                </div>
+              </a>
+           </li>
+                      <li>
+              <a class="featured-side" href="/foro/juegos/steam-dejara-compartir-tus-videojuegos-nuevo-modo-familia-709074">
+                <img class="itemimg" src="https://mediavida.b-cdn.net/img/featured/2024/03/40hdn2qe58.jpg" alt="miniatura">
+                <div class="featured-info">
+                  <h4>Steam te dejará compartir tus videojuegos - Nuevo modo familia -</h4>
+                  <!--<span class="featured-count">99</span>-->
+                </div>
+              </a>
+           </li>
+                      <li>
+              <a class="featured-side" href="/foro/juegos/anuncio-y-trailer-de-outward-2-708782">
+                <img class="itemimg" src="https://mediavida.b-cdn.net/img/featured/2024/03/a5tfmubdas.jpg" alt="miniatura">
+                <div class="featured-info">
+                  <h4>Anuncio y tráiler de Outward 2</h4>
+                  <!--<span class="featured-count">99</span>-->
+                </div>
+              </a>
+        </div>
+        <div class="paarriba b-side">
+    <h3><i class="fa fa-shield"></i> Moderadores</h3>
+                <a href="/id/Longview" title="Longview">
+                  <img src="https://i.ytimg.com/vi/Tp8KllOeuF4/sddefault.jpg" width="32" height="32" alt="Longview">  <a href="/mensajes/nuevo?to=/foro/juegos" class="btn"> <br /><i class="fa fa-envelope"></i> Enviar mensaje</a>
+                </a>
+
+    </div>
+    
+
+    </div>
+</div>
+<div class="">
+  <br>
+  
+  <div class="containerAlLado">
+   
+  </div>
+
+  <!-- la parte de los foros -->
+  <div class="contenedorPrincipal">
+  <div class="wpx containerForo">
+    <style>
+      /* Center alignment for 2nd, 3rd, and 4th columns */
+      .mv th:nth-child(2),
+      .mv th:nth-child(3),
+      .mv th:nth-child(4),
+      .mv td:nth-child(2),
+      .mv td:nth-child(3),
+      .mv td:nth-child(4) {
+        text-align: center;
+      }
+    
+      /* Left alignment for the 5th column */
+      .mv th:nth-child(5),
+      .mv td:nth-child(5) {
+        text-align: left;
+      }
+    
+      /* Forum navigation styles */
+      .c-main {
+        font-family: Arial, sans-serif;
+      }
+    
+      .forum-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      .forum-nav a {
+        margin-right: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+        transition: background-color 0.3s ease;
+      }
+    
+      .forum-nav a:hover {
+        background-color: #ddd;
+      }
+    
+      .forum-nav .btn-primary {
+        background-color: #f000d0;
+        color: #fff;
+      }
+    
+      .forum-nav .btn-primary:hover {
+        background-color: #1a8fd2;
+      }
+    
+      .forum-nav .pull-right {
+        margin-left: auto;
+      }
+    
+      /* Table styles */
+      .wpx {
+        padding: 20px;
+      }
+    
+      .mv {
+        border-collapse: collapse;
+        width: 100%;
+      }
+    
+      .mv th,
+      .mv td {
+
+        padding: 10px;
+        text-align: left;
+      }
+    
+      .mv th {
+        background-color: #f5f5f5;
+        font-weight: normal;
+      }
+    
+      .mv .col-th {
+        width: 80%;
+      }
+    
+      .mv .sub {
+        background-color: #f5f5f5;
+      }
+    
+      .mv .sub th {
+        border-top: none;
+        border-bottom: none;
+      }
+    
+      .mv .sub th:first-child {
+        border-left: none;
+      }
+    
+      .mv .sub th:last-child {
+        border-right: none;
+      }
+    
+      .mv .sticky {
+        background-color: #f9f9f9;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+    
+      .mv .tema-status {
+        display: inline-block;
+        margin-right: 5px;
+        font-size: 14px;
+      }
+    
+      .mv .hb {
+        display: block;
+        text-decoration: none;
+        color: #333;
+      }
+    
+      .mv .hb:hover {
+        text-decoration: underline;
+      }
+    
+      .mv .tag-group a {
+        margin-right: 5px;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        background-color: #eee;
+      }
+    
+      .mv .tag-group a:hover {
+        background-color: #ddd;
+      }
+    
+      .thread-count {
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      .thread-count .num {
+        font-weight: bold;
+      }
+    
+      .thread-count .age {
+        font-size: 12px;
+      }
+    
+      .col-av {
+        display: flex;
+        align-items: center;
+      }
+    
+      .col-av img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 5px;
+      }
+    </style>
+      
+      <div class="c-main">
+          <div class="wpx">
+              <table class="mv full">
+                  <thead>
+                      <tr class="sub">
+                          <th style="width: auto;text-align:left"><span>Tema</span></th>
+                          <th style="width: 50px"><span title="Respuestas">Resp.</span></th>
+                          <th style="width: 50px" class="dtc"><span title="Lecturas">Lect.</span></th>
+                          <th style="width: 55px" class="ddtc" width="85">Usuarios</th>
+                          <th style="width: 50px;text-align:left;padding-left:6px" width="85" class="last dtc"><span title="Actividad">Activ.</span></th>
+                      </tr>
+                  </thead>
+                  <tbody id="temas">
+                    
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite Battle Royale #HG</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">6.6K</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">212.7K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/6m/6mUBMDgf3.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/2r/2r7aO0y2W.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">2d</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite StW, a minar vBucks.</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">737</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">61.3K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/8e/8e0Qpu5Xl.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/fG/fGjpanDbr.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">11May</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortniteros</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">290</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">16K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/9V/9VvuhcAOq.jpg"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/6t/6tgNbuA0M.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">9h</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">77</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">9.4K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">20May</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">El Hilo de Rendimiento y errores/bugs de Fortnite</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">868</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">43.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/6C/6CqzUYlmy.gif"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5e/5eWWX37tF.png"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite #HG</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">1.4K</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">55.2K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5e/5eWWX37tF.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/6J/6JoNeguty.png"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Temporada 10</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">29</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">2.4K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/6C/6CqzUYlmy.gif"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/4F/4FaEp3rAc.png"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">19Oct</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Tirones en Fortnite PC</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">25</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">3.9K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/ep/eposWsb9n.jpg"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/46/462QnfkNP.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">19Ago</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Problema con las recompensas (Diarias) epicas de salvar al mundo</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">1</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">942</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/XI/XI9T0uD.jpg"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5n/5nTHwk5vJ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">17Ago</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Como me iría Fortnite?</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">17</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">1.1K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/ep/epSoziKje.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/9C/9C55CC1WQ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">25Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Ayuda en picos trenzados, salvar al mundo</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">0</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">568</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/eq/eq4IEmhYD.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/ep/epRa9ZO0r.png"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">17Ago</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Amigos para escribir</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">2</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">520</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz1FfiE6AD9jNPJaeC-SajaIaqJH9gQWjxuWcg64Kung&s"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://static.wikia.nocookie.net/c9dde1fd-8d96-4288-97ea-6dca45a39891/scale-to-width/755"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">19Ago</span>                </a>
+                      </td>
+                    </tr>
+                    <!-- CONTINUACION DE LOS HILOS -->
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Rayado con la temperatura del pc</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">46</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">8.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://fastly.picsum.photos/id/832/200/300.jpg?hmac=6gMt7WeRsS41_901ujRTrOgfwtW9MBZ375g8qXO3LUc"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://fastly.picsum.photos/id/50/200/300.jpg?hmac=wlHRGoenBSt-gzxGvJp3cBEIUD71NKbWEXmiJC2mQYE"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">18Jun</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Amigos para escribir</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">153</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">520.7K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://fastly.picsum.photos/id/616/200/300.jpg?hmac=OPqWGCOp_eJVWmNlthIO-AKugNYYIBYh3Y7mO6MS_eg"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://fastly.picsum.photos/id/797/200/300.jpg?hmac=9JRjR3IU9I3ol6cF0HvudMsYauIgNcElExNSrGOlwGM"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">19Dic</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-th">
+                              <div class="thread">
+                                <a id="a624092" class="hb" title="Metro Exodus #HG | Más allá del metro de Moscú" href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092">Fortnite: Videos/Imágenes/Streams de los usuarios</a>			</div>
+                              <div class="tag-group"></div>
+                      </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">353</span>
+                          </td>
+                          <td class="dtc" style="text-align: center">
+                              <span title="Este tema se ha visto 19152 veces" class="num hmap-h">18.6K</span>
+                          </td>
+                          <td class="col-av col-av-m ddtc">
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/5A/5AfTDG7ua.png"></a>
+                                          <a class="tooltip-left"><img class="avatar s25 lazyloaded" src="https://mediavida.b-cdn.net/img/users/avatar/3Y/3YggQ0FvZ.jpg"></a>
+                          </td>
+                      <td class="last-av dtc" style="text-align: center">
+                                  <a href="/foro/juegos/metro-exodus-hg-mas-alla-metro-moscu-624092/17#496" title="Ver el último mensaje" class="cmap-h">
+                                      <span class="rd" title="31/3/24 a las 10:27" data-time="1711873645" data-format="tiny">22 Jul</span>                </a>
+                      </td>
+                    </tr>
+
+
+
+                    <tr>
+                      <td colspan="5" class="pad">
+                        <a class="btn btn-primary pull-left" href="/foro/juegos/nuevo-hilo"><i class="fa fa-plus-square"></i> Nuevo hilo</a>
+
+
+
+
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+    
+  </div>
+
+</div>
+
+</div>
+<br>
+<div class="home-hero"></div>
+
+
+        <!-- Footer -->
+        <div class="home-footer">
+          <footer class="footerContainer home-footer1">
+            <div class="home-container5">
+               <a class="home-logo2" href = "../index.html" >WIKIGAMES</a>
+
+              <nav class="home-nav1">
+                <a class="home-nav222 bodySmall"  href ="../politicaCookies.html" >Política de Cookies</a>
+                <a class="home-nav322 bodySmall"  href ="../politicaPrivacidad.html">Política de Privacidad</a>
+              </nav>
+
+            </div>
+            <div class="home-separator"></div>
+            <div class="home-container6">
+              <span class="home-text12">
+                © 2024 WikiGames, Inc Todos los derechos reservados.
+              </span>
+  
+              <div class="home-icon-group1"  align-items: rigth>
+                <!-- Twitter -->
+              <a href="https://twitter.com/i/flow/login" target="_blank">
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon10 socialIcons">
+                  
+                  <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
+                </svg>
+              </a>
+                <!-- Instagram -->
+              <a href="https://www.instagram.com" target="_blank">
+                <svg viewBox="0 0 877.7142857142857 1024" class="home-icon12 socialIcons">
+                  
+                  <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+                </svg>
+              </a>
+                <!-- Facebook -->
+              <a href="https://www.facebook.com/?locale=es_ES" target="_blank">
+                <svg viewBox="0 0 602.2582857142856 1024" class="home-icon14 socialIcons">
+                  <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                </svg>
+              </a>
+                  
+                </svg>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+  
+</html>
