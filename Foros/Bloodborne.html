@@ -166,6 +166,136 @@
       }
 
     </style>
+
+        <!-- style de la barra de abajo para cambiar a la siguiente pagina -->
+        <style>
+          .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+          }
+    
+          .pagination-arrow {
+            font-size: 24px;
+            color: #6c757d;
+            text-decoration: none;
+          }
+    
+          .pagination-numbers {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+          }
+    
+          .pagination-link {
+            display: block;
+            padding: 8px 16px;
+            margin: 0 4px;
+            border-radius: 4px;
+            background-color: #f5f5f5;
+            color: #6c757d;
+            text-decoration: none;
+          }
+    
+          .pagination-link:hover {
+            background-color: #e5e5e5;
+          }
+    
+          .current {
+            background-color: #007bff;
+            color: #fff;
+          }
+    
+          .current:hover {
+            background-color: #0069d9;
+          }
+    
+          .movable {
+            width: 260px;
+            height: 100px;
+            background-color: #d508ce00;
+            margin-top:  0%; /* Mover hacia arriba */
+            margin-bottom: -13.1%; /* Mover hacia abajo */
+            margin-right: 50%; /* Mover hacia la derecha */
+            margin-left: 90%; /* Mover hacia la izquierda */
+          }
+    
+        .imagenx{
+          display: flex;
+          gap: 10px;
+        }
+    
+        .buttonbarra {
+          color: var(--dl-color-custom-neutral-dark);
+          font-family: Hind;
+          font-weight: bold;
+          padding: var(--dl-space-space-halfunit) var(--dl-space-space-oneandhalfunits);
+          background-color: var(--dl-color-custom-primary1);
+    
+          color: #000000;
+          text-decoration: none;
+          transition: background-color 0.3s ease; /* Agregamos transición suave */
+        }
+    
+        .buttonbarra:hover {
+          background-color: #8ac140; /* Cambia el color al pasar el ratón */
+        }
+    
+        .moverloto {
+          margin-left: 37.7%;
+        }
+    
+        .movablev8 {
+            width: 1px;
+            height: 1px;
+            background-color: #d508cff5;
+        }
+        .tumuertoktmuevo {
+          margin-top:  -2.5%; /* Mover hacia arriba */
+          margin-bottom: 0%; /* Mover hacia abajo */
+          margin-right: 0%; /* Mover hacia la derecha */
+          margin-left: 2.1%; /* Mover hacia la izquierda */
+        } 
+    
+            .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    
+        .fa-reply {
+            text-align: center;
+            cursor: pointer;
+            white-space: nowrap;
+            user-select: none;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+    
+        .negriton{
+          background :#000000;
+        }
+    
+        .no-movible {
+          pointer-events: none;
+          background-color: #8ac140;
+        }
+        </style>
+
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -177,7 +307,7 @@
           
           <header data-thq="thq-navbar"class="navbarContainer home-navbar-interactive">
 
-            <a class="home-logo logo" href = "index.html" >WIKIGAMES</a>
+            <a class="home-logo logo" href = "../index.html" >WIKIGAMES</a>
 
             <div data-thq="thq-navbar-nav" class="home-desktop-menu">
               <nav class="home-links">
@@ -203,7 +333,7 @@
             <div data-thq="thq-mobile-menu" class="home-mobile-menu1 mobileMenu">
               <div class="home-nav">
                 <div class="home-top">
-                  <a class="logo" href = "index.html">WIKIGAMES</a>
+                  <a class="logo" href = "../index.html">WIKIGAMES</a>
                   <div data-thq="thq-close-menu" class="home-close-menu">
                     <svg
                       viewBox="0 0 1024 1024"
@@ -216,15 +346,15 @@
                   </div>
                 </div>
                 <nav class="home-links1">
-                  <a class="index.html" href="index.html">Home</a>
-                  <a class="home-nav221 bodySmall" href="Guias_y_Trucos.html">Guías y Trucos</a>
-                  <a class="home-nav321 bodySmall" href="foros.html">Foros</a>
-                  <a class="home-nav521 bodySmall" href="contacto.html">Contacto</a>
+                  <a class="index.html" href="../index.html">Home</a>
+                  <a class="home-nav221 bodySmall" href="../Guias_y_Trucos.html">Guías y Trucos</a>
+                  <a class="home-nav321 bodySmall" href="../foros.html">Foros</a>
+                  <a class="home-nav521 bodySmall" href="../contacto.html">Contacto</a>
                 </nav>
                 
                 <div class="home-buttons1">
-                  <a class="buttonFlat" href="login.html">Login</a>
-                  <a class="buttonFilled" href="register.html">Register</a>
+                  <a class="buttonFlat" href="../login.html">Login</a>
+                  <a class="buttonFilled" href="../register.html">Register</a>
                 </div>
                 
               </div>
@@ -323,18 +453,23 @@
     </div>
 
            <!-- barra de abajo para cambiar a la siguiente pagina -->
-     <div class="pagination">
-      <a href="#" class="pagination-arrow">&laquo;</a>
-      <ul class="pagination-numbers">
-        <li><a href="#" class="pagination-link current">1</a></li>
-        <li><a href="#" class="pagination-link">2</a></li>
-        <li><a href="#" class="pagination-link">3</a></li>
-        <li><a href="#" class="pagination-link">4</a></li>
-        <li><a href="#" class="pagination-link">5</a></li>
-      </ul>
-      <a href="#" class="pagination-arrow">&raquo;</a>
-    </div>
-    <br>
+    <div class="moverloto">
+      <a href="#" class="no-movible buttonbarra">1</a>
+      <a href="#" class="buttonbarra">2</a>
+      <a href="#" class="buttonbarra">3</a> 
+      <a href="#" class="buttonbarra">4</a>
+      <a href="#" class="buttonbarra">Siguiente</a>
+  </div>
+
+  <div class=" tumuertoktmuevo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <span class="buttonbarra">
+      <i class="fa fa-reply"></i>
+      <a href="#">Responder</a>
+    </span>
+  </div>
+
+  <br>
       
         </div>
       </body>
